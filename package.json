@@ -1,0 +1,25 @@
+{
+  "name": "braingames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games"
+  },
+  "type": "module",
+  "repository": {
+    "url": "git+https://github.com/M9lTHblu/frontend-project-lvl1.git"
+  },
+  "author": "M9lTHblu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M9lTHblu/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/M9lTHblu/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
