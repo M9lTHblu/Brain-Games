@@ -6,5 +6,3 @@ export default () => {
     if (userName) return console.log(`\nHello, ${userName}!`);
 };
 
-
- 

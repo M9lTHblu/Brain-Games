@@ -11,6 +11,7 @@
   },
   "type": "module",
   "repository": {
+    "type": "git",
     "url": "git+https://github.com/M9lTHblu/frontend-project-lvl1.git"
   },
   "author": "M9lTHblu",
