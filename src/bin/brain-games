@@ -1,6 +1,4 @@
 #!/usr/bin/env node
-import func from '../index.js'
+import func from '../index.js';
+
 func();
-
-
-
