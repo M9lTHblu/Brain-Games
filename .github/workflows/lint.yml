@@ -1,12 +1,12 @@
----
-name: Eslint test
+
+name: run lint
 
 on:
   push:
   pull_request:
 
 jobs:
-  eslint:
+  my-config-run-lint:
     name: eslint
     runs-on: ubuntu-latest
     steps:

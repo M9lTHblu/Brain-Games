@@ -2,7 +2,7 @@ install:
 	npm install
 
 start:
-	npx node src/bin/brain-games
+	npx node bin/brain-games
 	
 publish:
 	npm publish --dry-run
