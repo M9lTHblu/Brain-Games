@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import func from '../src/index.js';
 
-func();
+import * as step from '../src/index.js';
+
+step.getName();

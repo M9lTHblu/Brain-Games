@@ -1,6 +1,9 @@
 install:
 	npm install
 
+link:
+	npm link
+
 start:
 	npx node bin/brain-games
 	
@@ -9,5 +12,9 @@ publish:
 
 lint:
 	npx eslint .
+
+fixlint:
+	npx eslint . --fix
+
 
 .PHONY:test

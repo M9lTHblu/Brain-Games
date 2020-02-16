@@ -7,7 +7,8 @@
     "test": "test"
   },
   "bin": {
-    "brain-games": "bin/brain-games"
+    "brain-games": "bin/brain-games",
+    "brain-even": "bin/brain-even"
   },
   "type": "module",
   "repository": {

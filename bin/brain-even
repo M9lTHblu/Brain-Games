@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+import * as step from '../src/index.js';
+
+
+const nameUser = step.saveName(step.getName());
+const generateRandomNum = step.generateRandomNum();
+step.question(generateRandomNum, nameUser);
