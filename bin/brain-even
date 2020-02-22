@@ -1,9 +1,12 @@
 #!/usr/bin/env node
+import {game} from '../game/evenGame.js';
 
-import evenNumbersGame from '../src/index.js';
-
-evenGame();
-
+<<<<<<< HEAD
 
 
 
+
+
+=======
+game();
+>>>>>>> dev
