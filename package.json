@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/M9lTHblu/frontend-project-lvl1#readme",
   "devDependencies": {
+    "@hexlet/pairs": "^1.0.10",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
