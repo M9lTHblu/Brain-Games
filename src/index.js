@@ -2,19 +2,27 @@
 import readlineSync from 'readline-sync';
 
 
+export default (rulesOfGame, questionGame, correctAnswer, maxAmountStepsOfGame) => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello${name ? (', ' + name) : name}!`);
+  console.log(rulesOfGame);
+  while (maxAmountStepsOfGame > 0) {
+    const question = questionGame();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (!userAnswer) {
+      return;
+    } else if (correctAnswer(question) === userAnswer) {
+        console.log('Correct!');
+    } else {
+      return (
+        console.log(`"${userAnswer}" is wrong answer ;(.Correct answer was "${checkAnswerOfUser}" .Let's try again, ${name}`)
+      ); 
+    }
+    maxAmountStepsOfGame -= 1;
+  }
 
-export const meetUser = () => readlineSync.question('May I have your name? ');
-
-export const sayHello = (name) => console.log(`Hello${name ? (', ' + name) : name}!`);
-
-export const question = (value) => {
-  console.log(`Question: ${value}`);
-  return value;
+  return (
+    console.log(`congratulations${name ? (', ' + name) : name}!`)
+  );
 };
-export const termsOfGame = (str) => console.log(str);
-
-export const userAnswer = () => readlineSync.question('Your answer: ');
-
-export const checkAnswer = (value1, value2) => value1 === value2;
-
-
