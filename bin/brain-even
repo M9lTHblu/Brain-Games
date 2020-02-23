@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 import {game} from '../game/evenGame.js';
 
-<<<<<<< HEAD
 
-
-
-
-
-=======
 game();
->>>>>>> dev
