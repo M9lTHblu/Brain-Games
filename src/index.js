@@ -2,23 +2,23 @@
 import readlineSync from 'readline-sync';
 
 
-export default (rulesOfGame, questionGame, correctAnswer, maxAmountStepsOfGame) => {
+export default (rule, getQuestion, getAnswer) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? (`, ${name}`) : name}!`);
-  console.log(rulesOfGame);
-  let counter = maxAmountStepsOfGame;
+  console.log(rule);
+  let counter = 3;
   while (counter > 0) {
-    const question = questionGame();
+    const question = getQuestion();
     console.log(`Question: ${question}`);
-    const checkAnswerOfUser = correctAnswer(question);
+    const correctAnswer = getAnswer(question);
     const userAnswer = readlineSync.question('Your answer: ');
     if (!userAnswer) {
       return null;
     }
-    if (checkAnswerOfUser === userAnswer) {
+    if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${checkAnswerOfUser}" .Let's try again, ${name}`));
+      return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again, ${name}!`));
     }
     counter -= 1;
   }
