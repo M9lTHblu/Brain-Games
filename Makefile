@@ -5,7 +5,7 @@ link:
 	npm link
 
 start:
-	npx node bin/brain-even
+	npx node bin/brain-games
 	
 publish:
 	npm publish --dry-run

@@ -1,9 +1,15 @@
 
 import readlineSync from 'readline-sync';
 
-export default (rule, getQuestion, getAnswer) => {
+export const greeting = () => {
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello${name ? (`, ${name}`) : name}!`);
+  return console.log(`Hello${name ? (`, ${name}`) : name}!`);
+};
+
+
+export const engine = (rule, getQuestion, getAnswer) => {
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello${name ? `, ${name}` : name}!`);
   console.log(rule);
   let counter = 3;
   while (counter > 0) {
@@ -17,10 +23,9 @@ export default (rule, getQuestion, getAnswer) => {
     if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {
-      return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again, ${name}!`));
+      return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again ${name}!`));
     }
     counter -= 1;
   }
-  return (console.log(`Congratulations${name ? (`, ${name}`) : name}!`));
+  return (console.log(`Congratulations${name ? `, ${name}` : name}!`));
 };
-

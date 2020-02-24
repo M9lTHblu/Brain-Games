@@ -1,13 +1,5 @@
 #!/usr/bin/env node
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-// import * as step from '../src/index.js';
+import { greeting } from '../src/index.js';
 
-// step.getName();
-=======
->>>>>>> dev
-=======
-
-
->>>>>>> dev
+greeting();
