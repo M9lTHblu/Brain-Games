@@ -2,7 +2,7 @@ import { engine } from '../src/index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const getCollOfNums = () => {
+const getArrayOfNumbers = () => {
   const num = () => Math.floor(Math.random() * 100 + 2);
   const result = `${num()} ${num()}`;
   return result;
@@ -23,4 +23,4 @@ const answer = (str) => {
   return getDivider(arr[0], arr[1]);
 };
 
-export default () => engine(rule, getCollOfNums, answer);
+export default () => engine(rule, getArrayOfNumbers, answer);
