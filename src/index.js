@@ -20,7 +20,7 @@ export const engine = (rule, getQuestion, getAnswer) => {
     if (!userAnswer) {
       return null;
     }
-    if (correctAnswer === userAnswer) {
+    if (String(correctAnswer) === userAnswer) {
       console.log('Correct!');
     } else {
       return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again ${name}!`));

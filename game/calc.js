@@ -18,18 +18,21 @@ const getNumbers = () => {
 
 const getString = () => {
   const coll = getNumbers();
-  const getOperator = () => Math.floor(Math.random() * Math.floor(4));
+  const getOperator = () => Math.floor(Math.random() * 3);
+  let result;
   switch (getOperator()) {
     case 0:
-      return `${coll[0]} + ${coll[1]}`;
+      result = `${coll[0]} + ${coll[1]}`;
+      break;
     case 1:
-      return `${coll[0]} - ${coll[1]}`;
+      result = `${coll[0]} - ${coll[1]}`;
+      break;
     case 2:
-      return `${coll[0]} * ${coll[1]}`;
-    case 3:
-      return `${coll[0]} / ${coll[1]}`;
+      result = `${coll[0]} * ${coll[1]}`;
+      break;
     default:
   }
+  return result;
 };
 
 
@@ -44,9 +47,6 @@ const getExpressionOfString = (str) => {
   }
   if (arr[1] === '*') {
     result = (+arr[0]) * (+arr[2]);
-  }
-  if (arr[1] === '/') {
-    result = (+arr[0] / +arr[2]);
   }
   return String(result);
 };
