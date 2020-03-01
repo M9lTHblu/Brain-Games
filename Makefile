@@ -4,6 +4,9 @@ install:
 link:
 	npm link
 
+unlink:
+	npm unlink
+
 start:
 	npx node bin/brain-games
 	

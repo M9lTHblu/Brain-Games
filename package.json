@@ -9,7 +9,8 @@
   "bin": {
     "brain-games": "bin/brain-games",
     "brain-even": "bin/brain-even",
-    "brain-gcd": "bin/brain-gcd"
+    "brain-gcd": "bin/brain-gcd",
+    "brain-progression": "bin/brain-progression"
   },
   "type": "module",
   "repository": {
