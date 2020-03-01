@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 
 import { engine } from '../src/index.js';
 
@@ -46,5 +47,7 @@ const answer = (str) => {
 };
 
 const getQuest = () => question(createProgression());
+
 const rule = 'What number is missing in the progression?';
+
 export default () => engine(rule, getQuest, answer);
