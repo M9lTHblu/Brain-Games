@@ -5,4 +5,4 @@ This is a training project
 
 
 
- https://asciinema.org/a/7fJBVyHUxJwVE8xzGkl81uQxV
+<script id="asciicast-7fJBVyHUxJwVE8xzGkl81uQxV" src="https://asciinema.org/a/7fJBVyHUxJwVE8xzGkl81uQxV.js" async></script>
