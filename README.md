@@ -13,3 +13,5 @@ This is a training project
 
 
 <a href="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe" target="_blank"><img src="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe.svg" /></a>
+
+<a href="https://asciinema.org/a/QoYsNSdu0npxNImXXnvvzQS5s" target="_blank"><img src="https://asciinema.org/a/QoYsNSdu0npxNImXXnvvzQS5s.svg" /></a>
