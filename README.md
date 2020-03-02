@@ -9,4 +9,7 @@ This is a training project
 
 <a href="https://asciinema.org/a/XtkHdf9k7Lh7ICOkmvClUk3PZ" target="_blank"><img src="https://asciinema.org/a/XtkHdf9k7Lh7ICOkmvClUk3PZ.svg" /></a>
 
+<a href="https://asciinema.org/a/ircP7zOw0SveHjIwPsXigz1jH" target="_blank"><img src="https://asciinema.org/a/ircP7zOw0SveHjIwPsXigz1jH.svg" /></a>
+
+
 <a href="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe" target="_blank"><img src="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe.svg" /></a>
