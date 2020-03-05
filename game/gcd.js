@@ -3,7 +3,7 @@ import { engine } from '../src/index.js';
 const rule = 'Find the greatest common divisor of given numbers.';
 
 const getArrayOfNumbers = () => {
-  const num = () => Math.floor(Math.random() * 100 + 2);
+  const num = () => Math.floor(Math.random() * (100 - 2) + 2);
   const result = `${num()} ${num()}`;
   return result;
 };
