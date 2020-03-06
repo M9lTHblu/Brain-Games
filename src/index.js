@@ -7,23 +7,23 @@ export const greeting = () => {
 };
 
 
-export const engine = (rule, getQuestion, getAnswer) => {
+export const engine = (rule, showQuestion, getAnswer) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? `, ${name}` : name}!`);
   console.log(rule);
   let counter = 3;
   while (counter > 0) {
-    const question = getQuestion();
+    const question = showQuestion();
     console.log(`Question: ${question}`);
     const correctAnswer = getAnswer(question);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (!userAnswer) {
+    const usrAnswer = readlineSync.question('Your answer: ');
+    if (!usrAnswer) {
       return null;
     }
-    if (String(correctAnswer) === userAnswer) {
+    if (String(correctAnswer) === usrAnswer) {
       console.log('Correct!');
     } else {
-      return (console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again ${name}!`));
+      return (console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again ${name}!`));
     }
     counter -= 1;
   }
