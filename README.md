@@ -1,8 +1,7 @@
 # Brain Games #
 
 These are five simple math games  
-to start the desired game,  
-run the command of the corresponding game. 
+ 
 
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) ![Linter](https://github.com/M9lTHblu/frontend-project-lvl1/workflows/Linter/badge.svg)
@@ -15,6 +14,9 @@ run the command of the corresponding game.
 
 ### Usage example
 
+
+
+To start the desired game, run the command of the corresponding game.
 
     brain-even
 
