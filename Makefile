@@ -19,5 +19,3 @@ lint:
 fixlint:
 	npx eslint . --fix
 
-
-.PHONY:test
