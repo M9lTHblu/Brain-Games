@@ -1,9 +1,7 @@
 # Brain Games #
 
 These are five simple math games  
-
 to start the desired game,  
-
 run the command of the corresponding game. 
 
 
