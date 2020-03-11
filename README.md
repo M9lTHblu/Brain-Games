@@ -8,7 +8,7 @@ These are five simple math games
 
 ## Setup 
 
-    make instal
+    npm instal
 
 
 
