@@ -1,5 +1,5 @@
 
-import { engine } from '../src/index.js';
+import { engine } from '../index.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

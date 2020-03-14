@@ -1,5 +1,5 @@
 
-import { engine } from '../src/index.js';
+import { engine } from '../index.js';
 
 const rule = 'What is the result of the expression?';
 

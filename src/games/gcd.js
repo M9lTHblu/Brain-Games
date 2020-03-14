@@ -1,4 +1,4 @@
-import { engine } from '../src/index.js';
+import { engine } from '../index.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 

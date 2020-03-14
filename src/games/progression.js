@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-syntax */
 
-import { engine } from '../src/index.js';
+import { engine } from '../index.js';
 
 
 const rule = 'What number is missing in the progression?';
