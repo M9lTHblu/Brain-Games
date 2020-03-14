@@ -1,54 +1,25 @@
+import { getNum, getNumForOperation } from './math.js';
 
-import { engine } from '../index.js';
-
-const rule = 'What is the result of the expression?';
-
-// ---showQuestion---
-const getNumbers = () => {
-  const num = () => Math.floor(Math.random() * 50);
-  const arr = [];
-  let count = 2;
-  while (count > 0) {
-    const temp = num();
-    arr.push(temp);
-    count -= 1;
-  }
-  return arr;
-};
-
-const showQuestion = () => {
-  const coll = getNumbers();
-  const getOperator = () => Math.floor(Math.random() * 3);
-  let result;
-  switch (getOperator()) {
+const createExpression = (num1, operation, num2) => {
+  let expression;
+  let resultOfExpression;
+  switch (operation) {
     case 0:
-      result = `${coll[0]} + ${coll[1]}`;
+      expression = `${num1} - ${num2}`;
+      resultOfExpression = num1 - num2;
       break;
     case 1:
-      result = `${coll[0]} - ${coll[1]}`;
+      expression = `${num1} + ${num2}`;
+      resultOfExpression = num1 + num2;
       break;
     case 2:
-      result = `${coll[0]} * ${coll[1]}`;
+      expression = `${num1} * ${num2}`;
+      resultOfExpression = num1 * num2;
       break;
     default:
   }
-  return result;
-};
-// ---end---
-
-const getAnswer = (str) => {
-  const arr = str.split(' ');
-  let result;
-  if (arr[1] === '+') {
-    result = +arr[0] + +arr[2];
-  }
-  if (arr[1] === '-') {
-    result = +arr[0] - +arr[2];
-  }
-  if (arr[1] === '*') {
-    result = (+arr[0]) * (+arr[2]);
-  }
-  return String(result);
+  return [expression, resultOfExpression];
 };
 
-export default () => engine(rule, showQuestion, getAnswer);
+export const rule = 'What is the result of the expression?';
+export const game = () => createExpression(getNum(), getNumForOperation(), getNum());

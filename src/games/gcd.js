@@ -1,26 +1,15 @@
-import { engine } from '../index.js';
+import { getNum } from './math.js'
 
-const rule = 'Find the greatest common divisor of given numbers.';
-
-const showQuestion = () => {
-  const num = () => Math.floor(Math.random() * (100 - 2) + 2);
-  const result = `${num()} ${num()}`;
-  return result;
+const recognizeDivider = (num1, num2) => {
+  const getDivider = (a, b) => {
+    if (a === b) return a;
+    if (a < b) {
+      return getDivider(a, b - a);
+    }
+    return getDivider(a - b, b);
+  };
+  return [[`${num1} ${num2}`], getDivider(num1, num2)]
 };
 
-// ---getAnswer---
-const getDivider = (a, b) => {
-  if (a === b) return a;
-  if (a < b) {
-    return getDivider(a, b - a);
-  }
-  return getDivider(a - b, b);
-};
-
-const getAnswer = (str) => {
-  const arr = str.split(' ');
-  return getDivider(arr[0], arr[1]);
-};
-// ---end---
-
-export default () => engine(rule, showQuestion, getAnswer);
+export const rule = 'Find the greatest common divisor of given numbers.';
+export const game = () => recognizeDivider(getNum(), getNum());

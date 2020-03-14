@@ -1,14 +1,9 @@
+import { getNum } from './math.js';
 
-import { engine } from '../index.js';
-
-const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-const showQuestion = () => Math.floor(Math.random() * (100 - 2) + 2);
-
-const getAnswer = (value) => {
-  const result = (value % 2 === 0) ? 'yes' : 'no';
-  return result;
+const isEven = (num) => {
+  const result = (num % 2 === 0) ? 'yes' : 'no';
+  return [num, result];
 };
 
-
-export default () => engine(rule, showQuestion, getAnswer);
+export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+export const game = () => isEven(getNum());
