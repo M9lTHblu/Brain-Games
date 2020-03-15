@@ -4,16 +4,20 @@ on:
   pull_request:
 
 jobs:
-  eslint:
-    name: eslint
+  build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [13.x]
+    
     steps:
-    - uses: actions/checkout@v1
-    - name: install node v13
+    - uses: actions/checkout@v2
+    - name: Use Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 13
+        node-version: ${{ matrix.node-version }}
     - name: npm install
-      run: npm install
-    - name: eslint
+      run: make install
+    - name: Run Lint
       run: make lint
