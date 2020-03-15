@@ -20,26 +20,26 @@ To start the desired game, run the command of the corresponding game.
 
     brain-even
 
-<a href="https://asciinema.org/a/OzU3uA66kfWnCvkuyD1iCBBJT" target="_blank"><img src="https://asciinema.org/a/OzU3uA66kfWnCvkuyD1iCBBJT.svg" /></a>
+[![asciicast](https://asciinema.org/a/WLThdfdR7ZcnEuhsccoe01Bjk.svg)](https://asciinema.org/a/WLThdfdR7ZcnEuhsccoe01Bjk)
 
 
     brain-calc
 
-<a href="https://asciinema.org/a/XtkHdf9k7Lh7ICOkmvClUk3PZ" target="_blank"><img src="https://asciinema.org/a/XtkHdf9k7Lh7ICOkmvClUk3PZ.svg" /></a>
+[![asciicast](https://asciinema.org/a/5jYlw6lvhhtfjOnjj5xVyGUiY.svg)](https://asciinema.org/a/5jYlw6lvhhtfjOnjj5xVyGUiY)
 
 
 
     brain-gcd
 
-<a href="https://asciinema.org/a/ircP7zOw0SveHjIwPsXigz1jH" target="_blank"><img src="https://asciinema.org/a/ircP7zOw0SveHjIwPsXigz1jH.svg" /></a>
+[![asciicast](https://asciinema.org/a/oE76iA82L8FGpo9oshFJqCXmD.svg)](https://asciinema.org/a/oE76iA82L8FGpo9oshFJqCXmD)
 
 
 
     brain-progression
 
-<a href="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe" target="_blank"><img src="https://asciinema.org/a/H1f4HVeD0fFxCWW14iQKTPwBe.svg" /></a>
+[![asciicast](https://asciinema.org/a/HzjLAVtFjpR3p9PDzziUQF8g5.svg)](https://asciinema.org/a/HzjLAVtFjpR3p9PDzziUQF8g5)
 
 
     brain-prime
 
-<a href="https://asciinema.org/a/QoYsNSdu0npxNImXXnvvzQS5s" target="_blank"><img src="https://asciinema.org/a/QoYsNSdu0npxNImXXnvvzQS5s.svg" /></a>
+[![asciicast](https://asciinema.org/a/MTN2HWXEasTrDCmEgSnhrEFpb.svg)](https://asciinema.org/a/MTN2HWXEasTrDCmEgSnhrEFpb)
