@@ -2,10 +2,8 @@ import { getNum } from './math.js';
 
 const isPrime = (num) => {
   let result = 0;
-  let i = 2;
-  while (result === 0) {
+  for (let i = 2; result === 0; i += 1) {
     if (num % i === 0) result += i;
-    i += 1;
   }
   const answer = (num === result) ? 'yes' : 'no';
   return [num, answer];
