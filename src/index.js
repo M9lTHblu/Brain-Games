@@ -5,7 +5,7 @@ export default (gameRule = null, game = null) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? `, ${name}` : name}!`);
-  if(gameRule) {
+  if (gameRule) {
     console.log(gameRule);
     let counter = 3;
     while (counter > 0) {
@@ -21,5 +21,5 @@ export default (gameRule = null, game = null) => {
     }
     return (console.log(`Congratulations${name ? `, ${name}` : name}!`));
   }
-  return;
+  return null;
 };
