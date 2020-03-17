@@ -1,6 +1,7 @@
 import { getNum } from './math.js';
 
 const recognizeDivider = (num1, num2) => {
+  const nums = [`${num1} ${num2}`];
   const getDivider = (a, b) => {
     if (a === b) return a;
     if (a < b) {
@@ -8,7 +9,7 @@ const recognizeDivider = (num1, num2) => {
     }
     return getDivider(a - b, b);
   };
-  return [[`${num1} ${num2}`], getDivider(num1, num2)];
+  return [nums, getDivider(num1, num2)];
 };
 
 export const rule = 'Find the greatest common divisor of given numbers.';
