@@ -1,25 +1,25 @@
 import { getNum, getNumForOperation } from './math.js';
 
-const createExpression = (num1, operation, num2) => {
-  let expression;
-  let resultOfExpression;
+const createGame = (num1, operation, num2) => {
+  let question;
+  let answer;
   switch (operation) {
     case 0:
-      expression = `${num1} - ${num2}`;
-      resultOfExpression = num1 - num2;
+      question = `${num1} - ${num2}`;
+      answer = num1 - num2;
       break;
     case 1:
-      expression = `${num1} + ${num2}`;
-      resultOfExpression = num1 + num2;
+      question = `${num1} + ${num2}`;
+      answer = num1 + num2;
       break;
     case 2:
-      expression = `${num1} * ${num2}`;
-      resultOfExpression = num1 * num2;
+      question = `${num1} * ${num2}`;
+      answer = num1 * num2;
       break;
     default:
   }
-  return [expression, resultOfExpression];
+  return [question, answer];
 };
 
 export const rule = 'What is the result of the expression?';
-export const game = () => createExpression(getNum(), getNumForOperation(), getNum());
+export const game = () => createGame(getNum(), getNumForOperation(), getNum());

@@ -1,12 +1,12 @@
 import { getNum } from './math.js';
 
-const isPrime = (num) => {
+const isPrime = (question) => {
   let result = 0;
   for (let i = 2; result === 0; i += 1) {
-    if (num % i === 0) result += i;
+    if (question % i === 0) result += i;
   }
-  const answer = (num === result) ? 'yes' : 'no';
-  return [num, answer];
+  const answer = (question === result) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';

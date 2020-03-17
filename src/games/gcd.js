@@ -1,16 +1,18 @@
 import { getNum } from './math.js';
 
-const recognizeDivider = (num1, num2) => {
-  const nums = [`${num1} ${num2}`];
-  const getDivider = (a, b) => {
-    if (a === b) return a;
-    if (a < b) {
-      return getDivider(a, b - a);
-    }
-    return getDivider(a - b, b);
-  };
-  return [nums, getDivider(num1, num2)];
+const getGCD = (a, b) => {
+  if (a === b) return a;
+  if (a < b) {
+    return getGCD(a, b - a);
+  }
+  return getGCD(a - b, b);
+};
+
+const createGame = (num1, num2) => {
+  const question = `${num1} ${num2}`;
+  const answer = getGCD(num1, num2);
+  return [question, answer];
 };
 
 export const rule = 'Find the greatest common divisor of given numbers.';
-export const game = () => recognizeDivider(getNum(), getNum());
+export const game = () => createGame(getNum(), getNum());

@@ -1,16 +1,16 @@
 import { getNum, getDiff, getIndex } from './math.js';
 
-const createProgression = (diff, num, index) => {
-  const result = [];
+const createGame = (diff, num, index) => {
+  const question = [];
   let counter = num;
   for (let i = 10; i > 0; i -= 1) {
-    result.push(counter);
+    question.push(counter);
     counter += diff;
   }
-  const hidedNum = result[index];
-  result[index] = '..';
-  return [result, hidedNum];
+  const answer = question[index];
+  question[index] = '..';
+  return [question, answer];
 };
 
 export const rule = 'What number is missing in the progression?';
-export const game = () => createProgression(getDiff(), getNum(), getIndex());
+export const game = () => createGame(getDiff(), getNum(), getIndex());

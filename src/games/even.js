@@ -1,8 +1,8 @@
 import { getNum } from './math.js';
 
-const isEven = (num) => {
-  const result = (num % 2 === 0) ? 'yes' : 'no';
-  return [num, result];
+const isEven = (question) => {
+  const answer = (question % 2 === 0) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
