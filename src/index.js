@@ -14,13 +14,13 @@ export default (gameRule, game) => {
 
   let counter = 3;
   while (counter > 0) {
-    const gameProgress = game();
-    console.log(`Question: ${gameProgress[0]}`);
+    const questionAndAnswer = game();
+    console.log(`Question: ${questionAndAnswer[0]}`);
     const usrAnswer = readlineSync.question('Your answer: ');
-    if (`${gameProgress[1]}` === usrAnswer) {
-      console.log('Correct!')
+    if (`${questionAndAnswer[1]}` === usrAnswer) {
+      console.log('Correct!');
     } else {
-      return (console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${gameProgress[1]}".\nLet's try again ${name}!`));
+      return (console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer[1]}".\nLet's try again ${name}!`));
     }
     counter -= 1;
   }

@@ -1,4 +1,4 @@
-import { getNum, getDiff, getIndex } from './math.js';
+import { getRandomNum } from '../math.js';
 
 const createGame = (diff, num, index) => {
   const question = [];
@@ -13,4 +13,4 @@ const createGame = (diff, num, index) => {
 };
 
 export const rule = 'What number is missing in the progression?';
-export const game = () => createGame(getDiff(), getNum(), getIndex());
+export const game = () => createGame(getRandomNum(1, 11), getRandomNum(2, 101), getRandomNum(0, 10));

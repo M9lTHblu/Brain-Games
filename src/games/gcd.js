@@ -1,4 +1,4 @@
-import { getNum } from './math.js';
+import { getRandomNum } from '../math.js';
 
 const getGCD = (a, b) => {
   if (a === b) return a;
@@ -15,4 +15,4 @@ const createGame = (num1, num2) => {
 };
 
 export const rule = 'Find the greatest common divisor of given numbers.';
-export const game = () => createGame(getNum(), getNum());
+export const game = () => createGame(getRandomNum(2, 101), getRandomNum(2, 101));
