@@ -2,7 +2,7 @@ import { getRandomNum } from '../math.js';
 
 const isPrime = (question) => {
   let result = 0;
-  for (let i = 2; result === 0; i += 1) {
+  for (let i = 2; i < question; i += 1) {
     if (question % i === 0) result += i;
   }
   const answer = (question === result) ? 'yes' : 'no';
