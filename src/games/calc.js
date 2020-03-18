@@ -1,9 +1,9 @@
 import { getRandomNum } from '../math.js';
 
-const createGame = (num1, operation, num2) => {
+const createGame = (num1, expressionOperator, num2) => {
   let question;
   let answer;
-  switch (operation) {
+  switch (expressionOperator) {
     case 0:
       question = `${num1} - ${num2}`;
       answer = num1 - num2;
