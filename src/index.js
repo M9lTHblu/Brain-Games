@@ -1,17 +1,11 @@
 
 import readlineSync from 'readline-sync';
 
-export const greeting = () => {
+export default (gameRule, game) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? `, ${name}` : name}!`);
-  return name;
-};
-
-export default (gameRule, game) => {
-  const name = greeting();
   console.log(gameRule);
-
   let counter = 3;
   while (counter > 0) {
     const questionAndAnswer = game();

@@ -2,10 +2,7 @@ import { getRandomNum } from '../math.js';
 
 const getGCD = (a, b) => {
   if (a === b) return a;
-  if (a < b) {
-    return getGCD(a, b - a);
-  }
-  return getGCD(a - b, b);
+  return (a < b) ? getGCD(a, b - a) : getGCD(a - b, b);
 };
 
 const createGame = (num1, num2) => {
