@@ -6,15 +6,15 @@ export default (gameRule, game) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? `, ${name}` : name}!`);
   console.log(gameRule);
+  const [question, answer] = game()
   let counter = 3;
   while (counter > 0) {
-    const questionAndAnswer = game();
-    console.log(`Question: ${questionAndAnswer[0]}`);
+    console.log(`Question: ${question}`);
     const usrAnswer = readlineSync.question('Your answer: ');
-    if (`${questionAndAnswer[1]}` === usrAnswer) {
+    if (`${answer}` === usrAnswer) {
       console.log('Correct!');
     } else {
-      return (console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer[1]}".\nLet's try again ${name}!`));
+      return (console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${answer}".\nLet's try again ${name}!`));
     }
     counter -= 1;
   }

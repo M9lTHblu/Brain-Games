@@ -1,6 +1,9 @@
 import { getRandomNum } from '../math.js';
 
-const createGame = (num1, expressionOperator, num2) => {
+export const createQuestionAndAnswer = () => {
+  const num1 = getRandomNum(2, 101);
+  const num2 = getRandomNum(2, 101);
+  const expressionOperator = getRandomNum(0, 3);
   let question;
   let answer;
   switch (expressionOperator) {
@@ -22,4 +25,3 @@ const createGame = (num1, expressionOperator, num2) => {
 };
 
 export const rule = 'What is the result of the expression?';
-export const game = () => createGame(getRandomNum(2, 100), getRandomNum(0, 3), getRandomNum(2, 100));

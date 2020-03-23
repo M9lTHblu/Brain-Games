@@ -1,16 +1,19 @@
 import { getRandomNum } from '../math.js';
 
-const createGame = (diff, num, index) => {
-  const question = [];
-  let counter = num;
+export const createQuestionAndAnswer = () => {
+  const progressionDifference = getRandomNum(1, 11);
+  const firstNumber = getRandomNum(2, 101);
+  const indexOfHiddenNumber = getRandomNum(0, 10);
+  const progression = [];
+  let counter = firstNumber;
   for (let i = 10; i > 0; i -= 1) {
-    question.push(counter);
-    counter += diff;
+    progression.push(counter);
+    counter += progressionDifference;
   }
-  const answer = question[index];
-  question[index] = '..';
+  const answer = progression[indexOfHiddenNumber];
+  progression[indexOfHiddenNumber] = '..';
+  const question = progression.join(' ');
   return [question, answer];
 };
 
 export const rule = 'What number is missing in the progression?';
-export const game = () => createGame(getRandomNum(1, 11), getRandomNum(2, 101), getRandomNum(0, 10));
