@@ -1,6 +1,6 @@
 import { getRandomNum } from '../math.js';
 
-export const createQuestionAndAnswer = () => {
+export const createRandomProgression = () => {
   const progressionDifference = getRandomNum(1, 11);
   const firstNumber = getRandomNum(2, 101);
   const indexOfHiddenNumber = getRandomNum(0, 10);

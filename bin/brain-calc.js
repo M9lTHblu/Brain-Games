@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 import engine from '../src/index.js';
-import { rule, createQuestionAndAnswer } from '../src/games/calc.js';
+import { rule, getRandomExpression } from '../src/games/calc.js';
 
-engine(rule, createQuestionAndAnswer);
+engine(rule, getRandomExpression);

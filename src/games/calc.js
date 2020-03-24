@@ -1,6 +1,6 @@
 import { getRandomNum } from '../math.js';
 
-export const createQuestionAndAnswer = () => {
+export const getRandomExpression = () => {
   const num1 = getRandomNum(2, 101);
   const num2 = getRandomNum(2, 101);
   const expressionOperator = getRandomNum(0, 3);
