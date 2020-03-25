@@ -1,3 +1,4 @@
+import engine from '../index.js';
 import { getRandomNum } from '../math.js';
 
 const isPrime = (number) => {
@@ -12,11 +13,12 @@ const isPrime = (number) => {
   return number === result;
 };
 
-export const createQuestionAndAnswer = () => {
+const createQuestionAndAnswer = () => {
+  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const question = getRandomNum(2, 101);
   const answer = isPrime(question) ? 'yes' : 'no';
-  return [question, answer];
+  return [rule, question, answer];
 };
 
-export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export default () => engine(createQuestionAndAnswer);
 
