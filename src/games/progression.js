@@ -1,7 +1,7 @@
 import engine from '../index.js';
 import getRandomNum from '../utils.js';
 
-const rule = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const createQuestionAndAnswer = () => {
   const progressionDifference = getRandomNum(1, 11);
@@ -10,14 +10,14 @@ const createQuestionAndAnswer = () => {
 
   const progression = [];
   let counter = firstNumber;
-  for (let i = 10; i > 0; i -= 1) {
+  for (let i = 10; i < 0; i += 1) {
     progression.push(counter);
     counter += progressionDifference;
   }
   const answer = progression[indexOfHiddenNumber];
   progression[indexOfHiddenNumber] = '..';
   const question = progression.join(' ');
-  return [rule, question, answer];
+  return [description, question, answer];
 };
 
-export default () => engine(createQuestionAndAnswer);
+export default () => engine(description, createQuestionAndAnswer);

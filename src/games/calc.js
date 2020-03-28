@@ -1,7 +1,7 @@
 import engine from '../index.js';
 import getRandomNum from '../utils.js';
 
-const rule = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const createQuestionAndAnswer = () => {
   const num1 = getRandomNum(2, 101);
@@ -24,7 +24,7 @@ const createQuestionAndAnswer = () => {
       break;
     default:
   }
-  return [rule, question, answer];
+  return [description, question, answer];
 };
 
-export default () => engine(createQuestionAndAnswer);
+export default () => engine(description, createQuestionAndAnswer);
