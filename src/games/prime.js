@@ -1,5 +1,5 @@
 import engine from '../index.js';
-import getRandomNum from '../math.js';
+import getRandomNum from '../utils.js';
 
 const isPrime = (number) => {
   let result = 0;
