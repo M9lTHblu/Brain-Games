@@ -14,7 +14,7 @@ const isPrime = (number) => {
 const createQuestionAndAnswer = () => {
   const question = getRandomNum(2, 101);
   const answer = isPrime(question) ? 'yes' : 'no';
-  return [description, question, answer];
+  return [question, answer];
 };
 
 export default () => engine(description, createQuestionAndAnswer);

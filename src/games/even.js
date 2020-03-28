@@ -8,7 +8,7 @@ const isEven = (number) => number % 2 === 0;
 const createQuestionAndAnswer = () => {
   const question = getRandomNum(2, 101);
   const answer = isEven(question) ? 'yes' : 'no';
-  return [description, question, answer];
+  return [question, answer];
 };
 
 export default () => engine(description, createQuestionAndAnswer);

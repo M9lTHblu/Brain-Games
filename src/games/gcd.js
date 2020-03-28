@@ -10,7 +10,7 @@ const createQuestionAndAnswer = () => {
   const num2 = getRandomNum(2, 101);
   const question = `${num1} ${num2}`;
   const answer = getGCD(num1, num2);
-  return [description, question, answer];
+  return [question, answer];
 };
 
 export default () => engine(description, createQuestionAndAnswer);

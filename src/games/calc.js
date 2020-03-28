@@ -24,7 +24,8 @@ const createQuestionAndAnswer = () => {
       break;
     default:
   }
-  return [description, question, answer];
+  return [question, answer];
 };
 
 export default () => engine(description, createQuestionAndAnswer);
+
