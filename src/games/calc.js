@@ -1,9 +1,9 @@
 import engine from '../index.js';
 import { getRandomNum } from '../utils.js';
 
+const rule = 'What is the result of the expression?';
 
 const createQuestionAndAnswer = () => {
-  const rule = 'What is the result of the expression?';
   const num1 = getRandomNum(2, 101);
   const num2 = getRandomNum(2, 101);
   const expressionOperator = getRandomNum(0, 3);

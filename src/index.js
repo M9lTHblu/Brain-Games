@@ -5,10 +5,11 @@ export default (game) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello${name ? `, ${name}` : name}!`);
-  const [rule, question, answer] = game();
+  const [rule, , ] = game();
   console.log(rule);
   let counter = 3;
   while (counter > 0) {
+    const [, question, answer] = game();
     console.log(`Question: ${question}`);
     const usrAnswer = readlineSync.question('Your answer: ');
     if (`${answer}` === usrAnswer) {

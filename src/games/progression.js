@@ -1,9 +1,9 @@
 import engine from '../index.js';
 import { getRandomNum } from '../utils.js';
 
+const rule = 'What number is missing in the progression?';
 
 const createQuestionAndAnswer = () => {
-  const rule = 'What number is missing in the progression?';
   const progressionDifference = getRandomNum(1, 11);
   const firstNumber = getRandomNum(2, 101);
   const indexOfHiddenNumber = getRandomNum(0, 10);

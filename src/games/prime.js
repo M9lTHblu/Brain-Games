@@ -1,6 +1,8 @@
 import engine from '../index.js';
 import { getRandomNum } from '../utils.js';
 
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrime = (number) => {
   let result = 0;
   let i = 2;
@@ -14,7 +16,6 @@ const isPrime = (number) => {
 };
 
 const createQuestionAndAnswer = () => {
-  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const question = getRandomNum(2, 101);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [rule, question, answer];
