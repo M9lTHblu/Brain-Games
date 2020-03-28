@@ -28,4 +28,3 @@ const createQuestionAndAnswer = () => {
 };
 
 export default () => engine(description, createQuestionAndAnswer);
-
