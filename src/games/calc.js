@@ -23,7 +23,7 @@ const createQuestionAndAnswer = () => {
       answer = num1 * num2;
       break;
     default:
-     throw new Error('Switch error! Possible reasons: generating a number for the operation)');
+      throw new Error('Switch error! Possible reasons: generating a number for the operation)');
   }
   return [question, answer];
 };
