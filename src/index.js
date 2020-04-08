@@ -23,4 +23,5 @@ export default (description, game) => {
     }
   }
   console.log(`Congratulations, ${name}`);
+  return;
 };
