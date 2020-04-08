@@ -17,8 +17,7 @@ export default (description, game) => {
       console.log(`"${usrAnswer}" is wrong answer ;(. Correct answer was "${answer}".`);
       console.log(`Let's try again ${name}!`);
       return;
-    }
-    if (`${answer}` === usrAnswer) {
+    } else if (`${answer}` === usrAnswer) {
       console.log('Correct!');
       counter += 1;
     }
